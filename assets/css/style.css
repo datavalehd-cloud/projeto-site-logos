@@ -336,13 +336,24 @@ h3{font-size:1.1rem}
 }
 .gallery figcaption b{color:var(--txt);display:block;font-family:var(--font-display);letter-spacing:.04em}
 
-/* ===== WhatsApp flutuante ===== */
-.wa-float{
+/* ===== Botões flutuantes (Instagram + WhatsApp) ===== */
+.float-bar{
   position:fixed;right:18px;bottom:18px;z-index:90;
+  display:flex;align-items:center;gap:12px;
+}
+.ig-float,.wa-float{
   width:60px;height:60px;border-radius:50%;
-  background:var(--green);display:grid;place-items:center;
+  display:grid;place-items:center;transition:transform .2s;
+}
+.ig-float{
+  background:radial-gradient(circle at 30% 110%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow:0 8px 30px rgba(214,36,159,.4);
+}
+.ig-float:hover{transform:scale(1.08)}
+.ig-float svg{width:30px;height:30px}
+.wa-float{
+  position:relative;background:var(--green);
   box-shadow:0 8px 30px rgba(37,211,102,.45);
-  transition:transform .2s;
 }
 .wa-float:hover{transform:scale(1.08)}
 .wa-float svg{width:32px;height:32px;fill:#fff}
@@ -354,6 +365,8 @@ h3{font-size:1.1rem}
   0%{transform:scale(.85);opacity:1}
   100%{transform:scale(1.35);opacity:0}
 }
+.icon-only{padding:9px 10px}
+.icon-only svg{width:18px;height:18px}
 
 /* ===== Footer ===== */
 .footer{border-top:1px solid var(--line);background:var(--bg-2);padding:52px 0 0;margin-top:0}
