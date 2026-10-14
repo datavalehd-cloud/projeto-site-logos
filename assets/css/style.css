@@ -83,7 +83,7 @@ h3{font-size:1.1rem}
 .logo{display:flex;align-items:center;gap:10px;margin-right:auto}
 .logo-mark{height:42px;width:auto;display:block;flex:0 0 auto}
 .logo-txt{font-family:var(--font-display);font-weight:700;line-height:1.05;color:var(--txt);letter-spacing:.06em}
-.logo-txt small{display:block;font-size:.62rem;font-weight:400;letter-spacing:.3em;color:var(--accent);text-transform:uppercase}
+.logo-txt small{display:block;font-size:.78rem;font-weight:500;letter-spacing:.24em;color:var(--accent);text-transform:uppercase}
 .logo:hover{color:var(--txt)}
 .nav{display:flex;gap:4px;align-items:center}
 .nav a{
