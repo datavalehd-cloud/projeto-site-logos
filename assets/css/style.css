@@ -273,6 +273,7 @@ h3{font-size:1.1rem}
   padding:26px 24px;display:flex;flex-direction:column;gap:14px;
 }
 .quote p{color:#c9d4e6;font-style:italic}
+.quote.case p{font-style:normal}
 .quote footer{color:var(--muted);font-size:.85rem}
 .quote footer b{color:var(--accent);display:block;font-style:normal}
 .stars{color:var(--yellow);letter-spacing:3px}
