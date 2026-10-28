@@ -105,8 +105,24 @@ h3{font-size:1.1rem}
   0%,55%{background-position:0 0,90px 0}
   85%,100%{background-position:0 0,-150px 0}
 }
-.logo-txt{font-family:var(--font-display);font-weight:700;line-height:1.05;color:var(--txt);letter-spacing:.06em}
-.logo-txt small{display:block;font-size:.78rem;font-weight:500;letter-spacing:.24em;color:var(--accent);text-transform:uppercase}
+.logo-txt{
+  font-family:var(--font-display);font-weight:700;line-height:1.05;color:var(--txt);letter-spacing:.06em;
+  text-shadow:
+    0 1px 0 #b6c3da,
+    0 2px 0 #8b9cba,
+    0 3px 0 #61749a,
+    0 4px 0 #3a4c72,
+    0 5px 10px rgba(0,0,0,.65),
+    0 0 18px rgba(122,168,255,.22);
+}
+.logo-txt small{
+  display:block;font-size:.78rem;font-weight:500;letter-spacing:.24em;color:var(--accent);text-transform:uppercase;
+  text-shadow:
+    0 1px 0 #c05606,
+    0 2px 0 #8f4004,
+    0 3px 6px rgba(0,0,0,.6),
+    0 0 12px rgba(255,122,26,.35);
+}
 .logo:hover{color:var(--txt)}
 .nav{display:flex;gap:4px;align-items:center}
 .nav a{
