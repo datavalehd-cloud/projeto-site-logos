@@ -57,6 +57,24 @@ window.LOGOS = {
     });
   });
 
+  // Vídeo do card: reproduz enquanto o cursor está sobre o card
+  document.querySelectorAll("video.hover-video").forEach(function (v) {
+    var zone = v.closest(".card-img") || v;
+    function play() {
+      var p = v.play();
+      if (p && p.catch) p.catch(function () {});
+    }
+    function stop() {
+      v.pause();
+      try { v.currentTime = 0; } catch (e) {}
+    }
+    zone.addEventListener("mouseenter", play);
+    zone.addEventListener("mouseleave", stop);
+    zone.addEventListener("click", function () {
+      if (v.paused) play(); else stop();
+    });
+  });
+
   // Ano do rodapé
   document.querySelectorAll("[data-year]").forEach(function (el) {
     el.textContent = new Date().getFullYear();
